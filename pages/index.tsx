@@ -2,8 +2,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import {stringToIP2} from "./api/IP";
 
 const Home: NextPage = () => {
+  console.log(stringToIP2('888888'))
   return (
     <div className={styles.container}>
       <Head>
